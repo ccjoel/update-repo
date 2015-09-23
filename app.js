@@ -25,8 +25,9 @@ app.configure(function() {
 });
 
 
-app.get('/', function(req, res) {
-  console.log('post received');
+app.post('/hook', function(req, res) {
+  try{
+  console.log('post received w params:', req.body, req.params);
 
   console.log('directory:', __dirname);
 
@@ -37,7 +38,9 @@ app.get('/', function(req, res) {
     }
     return res.send('Success!');
   });
-
+} catch(e){
+   return res.sendStatus(400);
+ }
 
 });
 
