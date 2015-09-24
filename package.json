@@ -3,8 +3,7 @@
     "version": "0.0.0",
     "description": "App.",
     "author": {
-        "name": "Jessica Frazelle",
-        "url": "http://frazelledazzell.com"
+        "name": "Joel"
     },
     "private": true,
     "scripts": {
